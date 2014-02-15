@@ -1,6 +1,6 @@
 # Read in all bite/non-bite files as DataFrame objects
-bites_dir = '/home/steve/dml/activity-recognition/data/raw/bites/'
-non_bites_dir = '/home/steve/dml/activity-recognition/data/raw/non-bites/'
+bites_dir = 'raw/bites/'
+non_bites_dir = 'raw/non-bites/'
 file_ext = '.txt'
 q = []
 # Switch between bites_dir and non_bites_dir
@@ -29,6 +29,6 @@ for x in q:
 				i+=50
 		i+=1
 	y.append(u)
-	output = "/home/steve/dml/activity-recognition/data/parse/bites/" + str(c) + "-parsed.txt"
+	output = "parse/bites/" + str(c) + "-parsed.txt"
 	u.to_csv(output)
 	c+=1
